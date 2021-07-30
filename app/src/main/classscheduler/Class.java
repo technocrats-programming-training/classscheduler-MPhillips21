@@ -6,10 +6,11 @@ public class Class {
     int block;
     int ID;
 
-    public Class(String className, String classTeacher, int blockNumber, int idPass) {
+    public Class(String className, String classTeacher, int blockNumber) {
       name = className;
       teacher = classTeacher;
       block = blockNumber;
-      ID = idPass;
+      ID = id;
+      
     }
 }
