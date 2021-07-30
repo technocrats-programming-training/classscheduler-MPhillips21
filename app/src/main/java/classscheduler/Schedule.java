@@ -18,7 +18,7 @@ public class Schedule {
         classesInSchedule[classToAdd.block - 1] = classToAdd;
       availableClassesReference[classToAdd.ID] = addReplacement;
       } else {
-        System.out.println("Block " + classToAdd.block + " is already full.");
+        System.out.println("Block " + classToAdd.block + " is already full." + "\n");
       }
       
       return classesInSchedule;
@@ -44,6 +44,7 @@ public class Schedule {
           System.out.println("ID: " + availableClassesReference[a].ID + ", Block: " + availableClassesReference[a].block + ", Name: " + availableClassesReference[a].name + ", Teacher: " + availableClassesReference[a].teacher);
         }
       }
+      System.out.print("\n");
     }
 
 }
