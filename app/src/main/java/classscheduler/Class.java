@@ -6,10 +6,10 @@ public class Class {
     int block;
     int ID;
 
-    public Class(String className, String classTeacher, int blockNumber, int idPass) {
+    public Class(String className, String classTeacher, int blockNumber, int ID) {
       name = className;
       teacher = classTeacher;
       block = blockNumber;
-      ID = idPass;
+      this.ID = ID;
     }
 }
