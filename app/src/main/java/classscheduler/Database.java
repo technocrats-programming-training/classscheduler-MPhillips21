@@ -2,7 +2,7 @@ package classscheduler;
 
 public class Database {
 
-    static Class[] availableClasses;
+    public static Class[] availableClasses;
 
     public static void setNumClasses(int numClasses) {
       avilableClasses = new Class[numClasses];

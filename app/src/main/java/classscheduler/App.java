@@ -52,7 +52,7 @@ public class App {
       System.out.print("\n");
      
 
-      listOfClasses.addToList(i, new Class(chosenName, teacherName, chosenBlock, id));
+      Database.addToList(i, new Class(chosenName, teacherName, chosenBlock, id));
       System.out.println("Class added.");
     }
 
