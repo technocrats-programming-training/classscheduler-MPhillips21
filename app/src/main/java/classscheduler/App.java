@@ -28,9 +28,7 @@ public class App {
     } else {
       numberOfClasses = checkNumClasses;
     }
-    //Class[] availableClasses = new Class[numberOfClasses];
-    Database listOfClasses = new Database(numberOfClasses);
-    //listOfClasses.createList(numberOfClasses, blank);
+    Database.setNumClasses(numberOfClasses);
    
 
 
@@ -54,78 +52,14 @@ public class App {
       System.out.print("\n");
      
 
-      switch(i) {
-        case 0 : Class classOne = new Class(chosenName, teacherName, chosenBlock, id);
-        listOfClasses.addToList(i, classOne);
-        ;
-        break;
-
-        case 1 : Class classTwo = new Class(chosenName, teacherName, chosenBlock, id);
-        listOfClasses.addToList(i, classTwo);
-        break;
-
-        case 2 : Class classThree = new Class(chosenName, teacherName, chosenBlock, id);
-        listOfClasses.addToList(i, classThree);
-        break;
-
-        case 3 : Class classFour = new Class(chosenName, teacherName, chosenBlock, id);
-        listOfClasses.addToList(i, classFour);
-        break;
-
-        case 4 : Class classFive = new Class(chosenName, teacherName, chosenBlock, id);
-        listOfClasses.addToList(i, classFive);
-        break;
-
-        case 5 : Class classSix = new Class(chosenName, teacherName, chosenBlock, id);
-        listOfClasses.addToList(i, classSix);
-        break;
-
-        case 6 : Class classSeven = new Class(chosenName, teacherName, chosenBlock, id);
-        listOfClasses.addToList(i, classSeven);
-        break;
-
-        case 7 : Class classEight = new Class(chosenName, teacherName, chosenBlock, id);
-        listOfClasses.addToList(i, classEight);
-        break;
-
-        case 8 : Class classNine = new Class(chosenName, teacherName, chosenBlock, id);
-        listOfClasses.addToList(i, classNine);
-        break;
-
-        case 9 : Class classTen = new Class(chosenName, teacherName, chosenBlock, id);
-        listOfClasses.addToList(i, classTen);
-        break;
-
-        case 10 : Class classEleven = new Class(chosenName, teacherName, chosenBlock, id);
-        listOfClasses.addToList(i, classEleven);
-        break;
-
-        case 11 : Class classTwelve = new Class(chosenName, teacherName, chosenBlock, id);
-        listOfClasses.addToList(i, classTwelve);
-        break;
-
-        case 12 : Class classThirteen = new Class(chosenName, teacherName, chosenBlock, id);
-        listOfClasses.addToList(i, classThirteen);
-        break;
-
-        case 13 : Class classFourteen = new Class(chosenName, teacherName, chosenBlock, id);
-        listOfClasses.addToList(i, classFourteen);
-        break;
-
-        case 14 : Class classFifteen = new Class(chosenName, teacherName, chosenBlock, id);
-        listOfClasses.addToList(i, classFifteen);
-        break;
-
-        default : i--;
-      }
-      System.out.println("Class added" + "\n");
-      id++;
+      listOfClasses.addToList(i, new Class(chosenName, teacherName, chosenBlock, id));
+      System.out.println("Class added.");
     }
 
 
 
     //tasks
-    Schedule list = new Schedule(blank, listOfClasses);
+    Schedule list = new Schedule(blank);
     int addID = 0;
     int dropBlock = 0;
     final int n = 0;

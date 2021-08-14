@@ -1,21 +1,22 @@
 package classscheduler;
 
 public class Database {
-    Class[] availableClasses;
 
-    public Database(int listSize) {
-      this.availableClasses = new Class[listSize];
+    static Class[] availableClasses;
+
+    public static void setNumClasses(int numClasses) {
+      avilableClasses = new Class[numClasses];
     }
-      
+
     /*public Class[] createList(int listSize, Class fillerClass) {
       Class[] availableClasses = new Class[listSize];
-      for(int f = 0; f < liseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeetSize; f++) {
+      for(int f = 0; f < listSize; f++) {
         availableClasses[f] = fillerClass;
       }
       return availableClasses;
     }*/
 
-    public Class[] addToList(int classListID, Class addedClass) {
+    public static Class[] addToList(int classListID, Class addedClass) {
       availableClasses[classListID] = addedClass;
       return availableClasses;
     }

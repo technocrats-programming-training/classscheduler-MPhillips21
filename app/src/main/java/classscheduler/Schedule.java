@@ -4,12 +4,12 @@ public class Schedule {
     Class[] classesInSchedule;
     Class[] availableClassesReference;
 
-    public Schedule(Class initialFiller, Database classStorage) {
+    public Schedule(Class initialFiller) {
       this.classesInSchedule = new Class[4];
       for(int c = 0; c < 4; c++) {
         classesInSchedule[c] = initialFiller;
       }
-      availableClassesReference = classStorage.availableClasses;
+      availableClassesReference = Database.availableClasses;
     }
     
     public Class[] add(int classID, Class addReplacement) {
