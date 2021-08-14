@@ -5,7 +5,7 @@ public class Database {
     public static Class[] availableClasses;
 
     public static void setNumClasses(int numClasses) {
-      avilableClasses = new Class[numClasses];
+      availableClasses = new Class[numClasses];
     }
 
     /*public Class[] createList(int listSize, Class fillerClass) {
